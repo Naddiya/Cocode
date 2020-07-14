@@ -12,13 +12,8 @@ const Home = () => (
     <main className="main-container">
 
       <div className="welcome">
-        <h1 className="welcome-title">Pens are fucking dried up </h1>
-        <p className="welcome-subtitle">
-          You are not your fucking work. Your rapidograph pens are fucking dried up, the x-acto blades in your bag are rusty, 
-          and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something fucking original.
-          Never let your guard down by thinking you’re fucking good enough. A good fucking composition is the result of
-          
-        </p>
+        <h1 className="welcome-title">Bienvenue sur Team-Share !</h1>
+        <p className="welcome-subtitle">Première plateforme d'appel à projets collaboratifs en France.</p>
 
         <div className="welcome-buttons">
           <NavLink to="/project-creation"><button className="welcome-buttons-button cta-button">Lancez-vous !</button></NavLink>
