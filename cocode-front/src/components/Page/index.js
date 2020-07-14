@@ -18,7 +18,6 @@ class Page extends Component {
                     <Route path="/" exact component={Home} />
                     <Redirect to="/not-found" />
                 </Switch>
-
             </div>
         );
     }
