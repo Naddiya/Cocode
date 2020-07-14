@@ -1,7 +1,7 @@
 # Cocode
 Plateforme collaborative pour développeurs
 
-Créer une plateforme facilitant la recontre et la collaboration entre porteur de projet et porteur de compétences.
+Cocode a pour vocation de faciliter la recontre et la collaboration entre porteur de projet et porteur de compétences.
 >
 Vous avez une idée, un projet web qui vous tient à coeur ?
 >
