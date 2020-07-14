@@ -2,6 +2,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import 'semantic-ui-css/semantic.min.css';
 
 // == Import : local
 import App from 'src/components/App';
@@ -11,7 +13,9 @@ import store from 'src/store';
 // 1. Le composant racine (celui qui contient l'ensemble de l'app)
 const rootComponent = (
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>
 );
 
