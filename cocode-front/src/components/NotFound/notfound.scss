@@ -1,0 +1,22 @@
+@import 'src/styles/_vars.scss';
+
+
+.notfound{
+    border:solid 2px #FF7D00;
+    margin:1rem;
+    border-radius: 5px;
+
+    &-title{
+        font-size: 5rem;
+        color:#FF7D00;
+    }
+    &-image{
+        width:50vw;
+    }
+    &-redirection{
+        margin: 2rem;
+        &-button{
+            background-color : white;
+        }
+    }
+}

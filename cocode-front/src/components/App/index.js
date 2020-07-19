@@ -7,7 +7,6 @@ import Navbar from 'src/components/Navbar';
 // import Burger from 'src/components/Burger';
 import Page from 'src/components/Page';
 import Footer from 'src/components/Footer';
-import NotFound from 'src/components/NotFound';
 
 // == Composant
 const App = () => (
