@@ -1,45 +1,31 @@
-// == Import : npm
+// import Modules
 import React, { Component } from 'react';
-// import { NavLink } from 'react-router-dom';
 
-// == Import : local
+// import Components
 
-// == Composant
-const NotFound = () => {
+
+// this Component
+class NotFound extends Component {
     state = {}
     render() {
         return (
-            <>
-                <h1>
-                    NOT FOUND
-            </h1>
-                <img src="" alt="">
+            <div classname="not-found">
+                <h1 className="text-center m-3 text-dark">
+                    Not Found
+                </h1>
+                <main>
 
-                </img>
-                <div style="width:100%;height:0;padding-bottom:65%;position:relative;">
-                    <iframe src="https://giphy.com/embed/IHOOMIiw5v9VS"
-                        width="100%"
-                        height="100%"
-                        style="position:absolute"
-                        frameBorder="0"
-                        class="giphy-embed"
-                        allowFullScreen>
-                    </iframe>
+                    <img className="not-found" src="https://media.giphy.com/media/IHOOMIiw5v9VS/source.gif" />
+                </main>
+                <div className="return-home">
+                    <button>
+                        <h2>Back to Cocode</h2>
+                    </button>
                 </div>
-                <p>
-                    <a href="https://giphy.com/gifs/mel-brooks-spaceballs-IHOOMIiw5v9VS">via GIPHY</a>
-                </p>
-                <button>
-                    Retrouver Cocode
-            </button>
-            </>
+
+            </div>
         );
     }
 }
 
-
-
-// == Export
 export default NotFound;
-
-

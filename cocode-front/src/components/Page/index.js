@@ -1,24 +1,29 @@
-// import Modules
+// == Import : npm
 import React, { Component } from 'react';
+import { Route, Redirect, Switch, Router } from "react-router-dom";
+// import { slide as Menu } from "react-burger-menu";
+// import axios from 'axios';
 
-// import Components
+// == Import : local
+import Home from 'src/components/Home';
+import NotFound from 'src/components/NotFound';
 
 
-// this Component
-class NotFound extends Component {
+// == Composant
+class Page extends Component {
     state = {}
     render() {
         return (
-            <div classname="container w-75">
-                <h1 className="text-center m-3 text-dark">
-                    Oops
-                </h1>
-                <img src="https://media.giphy.com/media/IHOOMIiw5v9VS/source.gif" />
-
-
+            <div>
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/not-found" component={NotFound} />
+                    <Redirect to="/not-found" />
+                </Switch>
             </div>
         );
     }
 }
 
-export default NotFound;
+
+export default Page;
