@@ -1,38 +1,48 @@
 // == Import : npm
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Input, Menu } from 'semantic-ui-react'
+
 
 
 // == Import : local
 import './navbar.scss';
-import BreadCumbs from 'src/components/BreadCrumbs';
-import { Breadcrumbs } from '@material-ui/core';
-import IconBreadcrumbs from '../BreadCrumbs';
+
 // == Composant
 const Navbar = () => {
 
     return (
         <div className="navbar">
-            <div>
-                <NavLink to="/" exact>
-                    <img className="navbar-logo" alt="logo" src="src/assets/cocode-logo.png" />
-                </NavLink>
-            </div>
-            <ul className="navbar-links">
+
+            <NavLink className="navbar-logo" to="/" exact>
+                <img className="navbar-logo-image" alt="logo" src="src/assets/cologo.png" />
+                <h3 className="navbar-logo-text">Cocode.com</h3>
+            </NavLink>
+
+            <Menu secondary>
+                <Menu.Item name="Nest" />
+                <Menu.Item name="Eggs" />
+                <Menu.Item>
+                    <Input icon='search' placeholder='Search...' />
+                </Menu.Item>
+            </Menu>
+
+
+            {/* <ul className="navbar-links">
                 <li>
-                    <NavLink to="/projects" className="navbar-link">Projets</NavLink>
+                    <NavLink to="/projects" className="navbar-links-link">Projets</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/profile" className="navbar-link">Mon Profil</NavLink>
+                    <NavLink to="/profile" className="navbar-links-link">Mon Profil</NavLink>
                 </li>
                 <li>
-                    <NavLink to="#" className="navbar-link button-link button-link-connect">Connect</NavLink>
+                    <NavLink to="#" className="navbar-links-link ">Connect</NavLink>
                 </li>
                 <li>
-                    <NavLink to="#" className="navbar-link button-link button-link-subscribe" >Projets</NavLink>
+                    <NavLink to="#" className="navbar-links-link " >Inscription</NavLink>
                 </li>
 
-                {/* <li>
+                <li>
                     {token.length > 3 && <NavLink to="/profile" className="navbar-link">Mon Profil</NavLink>}
                 </li>
                 <li>
@@ -43,9 +53,10 @@ const Navbar = () => {
                 </li>
                 <li className="navbar-link">
                     {token.length > 3 && <DisconnectModal className="button-link-connect" />}
-                </li> */}
-            </ul>
-            <IconBreadcrumbs />
+                </li>
+            </ul> */}
+
+
         </div>
     );
 };

@@ -1,33 +1,29 @@
 @import 'src/styles/_vars.scss';
 
 .navbar {
+  margin-top:1rem;
   z-index:2000;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  color:black;
 
-  &-logo {
-    width: 50%;
-    height: 50%;
-    margin: 1rem 1.7rem;
+  &-logo-image {
+    width: 40%;
+    height: 40%;
+  }
+  &-logo-text {
+    margin-top:0;
+    color:black;
   }
 
   &-links {
-    z-index:2000;
-    margin-top:1rem;
     display: flex;
-    align-items: center;
-    margin-top: .5rem;
-  }
+    text-align:bottom; 
+ }
 
-  &-link {
-    z-index:2000;
-    padding: 1rem;
-    color: $eerie-black;
-    font-size: 1.4em;
-    margin-right: 1rem;
-    font-weight:500;
-    font-family: &font-slab;
+ &-link {
+  margin:1rem;
   }
 }
 
@@ -36,9 +32,9 @@
   border-radius: 4px;
   width: 150px;
   border: none;
-  background-color: $yankees-blue;
   font-size: 16px;
   color: #FFF;
+  background-color: $yankees-blue;
 
   &-subscribe {
     background-color: $dark-cerulean;
@@ -93,8 +89,7 @@
     align-items: flex-start;
   
     &-logo {
-      width: 30%;
-      margin: 1rem 0.5rem;
+      width: 50%;
       z-index:2000;
     }
   
