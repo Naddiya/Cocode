@@ -1,8 +1,7 @@
 // == Import : npm
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
-
+import { Button, Menu } from 'semantic-ui-react'
 
 // == Import : local
 import './navbar.scss';
@@ -30,6 +29,7 @@ const Navbar = () => {
                 <li>
                     <NavLink to="#" className="navbar-link button-link button-link-subscribe" >Projets</NavLink>
                 </li>
+
                 {/* <li>
                     {token.length > 3 && <NavLink to="/profile" className="navbar-link">Mon Profil</NavLink>}
                 </li>
