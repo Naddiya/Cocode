@@ -35,7 +35,7 @@ const Arianne = () => {
             <Breadcrumbs aria-label="breadcrumb" className="arianne">
                 <Link color="inherit" href="/" onClick={handleClick} className={classes.link}>
                     <HomeIcon className={classes.icon} />
-        Material-UI
+        Acceuil
       </Link>
                 <Link
                     color="inherit"
@@ -44,11 +44,11 @@ const Arianne = () => {
                     className={classes.link}
                 >
                     <WhatshotIcon className={classes.icon} />
-        Core
+        Les projets
       </Link>
                 <Typography color="textPrimary" className={classes.link}>
                     <GrainIcon className={classes.icon} />
-        Breadcrumb
+        etc.
       </Typography>
             </Breadcrumbs>
         </Container>

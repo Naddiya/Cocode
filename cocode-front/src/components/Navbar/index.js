@@ -19,13 +19,28 @@ const Navbar = () => {
                 <h3 className="navbar-logo-text">Cocode.com</h3>
             </NavLink>
 
-            <Menu secondary>
+            {/* <Menu secondary>
                 <Menu.Item name="Nest" />
                 <Menu.Item name="Eggs" />
                 <Menu.Item>
                     <Input icon='search' placeholder='Search...' />
                 </Menu.Item>
-            </Menu>
+            </Menu> */}
+
+            <div className="ui secondary menu">
+                <a className="active item">Acceuil</a>
+                <a className="item"> Tous les projets </a>
+                <a className="item">Friends</a>
+                <div className="right menu">
+                    <div className="item">
+                        <div className="ui icon input">
+                            <input type="text" placeholder="Search..." />
+                            <i aria-hidden="true" className="search icon"></i>
+                        </div>
+                    </div>
+                    <a className="item">Subscribe</a>
+                </div>
+            </div>
 
 
             {/* <ul className="navbar-links">

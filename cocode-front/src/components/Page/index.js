@@ -7,6 +7,7 @@ import { Route, Redirect, Switch, Router } from "react-router-dom";
 // == Import : local
 import Home from 'src/components/Home';
 import NotFound from 'src/components/NotFound';
+import Arianne from 'src/components/Arianne';
 
 
 // == Composant
@@ -15,6 +16,8 @@ class Page extends Component {
     render() {
         return (
             <div>
+                <Arianne />
+
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/not-found" component={NotFound} />
