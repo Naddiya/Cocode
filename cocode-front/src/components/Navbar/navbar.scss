@@ -17,35 +17,35 @@
     color:black;
   }
 
-  &-links {
-    display: flex;
-    text-align:bottom; 
- }
+//   &-links {
+//     display: flex;
+//     text-align:bottom; 
+//  }
 
- &-link {
-  margin:1rem;
-  }
+//  &-link {
+//   margin:1rem;
+//   }
 }
 
-.button-link {
-  padding: .5rem .8rem;
-  border-radius: 4px;
-  width: 150px;
-  border: none;
-  font-size: 16px;
-  color: #FFF;
-  background-color: $yankees-blue;
+// .button-link {
+//   padding: .5rem .8rem;
+//   border-radius: 4px;
+//   width: 150px;
+//   border: none;
+//   font-size: 16px;
+//   color: #FFF;
+//   background-color: $yankees-blue;
 
-  &-subscribe {
-    background-color: $dark-cerulean;
-  }
-  &-connect {
-    background-color: $easy-blue;
-  }
-  &-connect:hover , &-subscribe:hover {
-    color: #2185D0;
-  }
-}
+//   &-subscribe {
+//     background-color: $dark-cerulean;
+//   }
+//   &-connect {
+//     background-color: $easy-blue;
+//   }
+//   &-connect:hover , &-subscribe:hover {
+//     color: #2185D0;
+//   }
+// }
 
 
 .modal {

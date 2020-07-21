@@ -1,58 +1,14 @@
-// Import npm
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Link from '@material-ui/core/Link';
-import HomeIcon from '@material-ui/icons/Home';
-import WhatshotIcon from '@material-ui/icons/Whatshot';
-import GrainIcon from '@material-ui/icons/Grain';
-import Container from '@material-ui/core/Container';
+import React from 'react'
+import { Breadcrumb } from 'semantic-ui-react'
 
-// Import Local
+const sections = [
+    { key: 'Home', content: 'Home', link: true },
+    { key: 'Store', content: 'Store', link: true },
+    { key: 'Shirt', content: 'T-Shirt', active: true },
+]
 
-const useStyles = makeStyles((theme) => ({
-    link: {
-        display: 'flex',
-    },
-    icon: {
-        marginRight: theme.spacing(0.5),
-        width: 20,
-        height: 20,
-    },
-}));
-
-function handleClick(event) {
-    event.preventDefault();
-    console.info('You clicked a breadcrumb.');
-}
-
-const Arianne = () => {
-    const classes = useStyles();
-
-    return (
-        <Container maxWidth="sm">
-            <Breadcrumbs aria-label="breadcrumb" className="arianne">
-                <Link color="inherit" href="/" onClick={handleClick} className={classes.link}>
-                    <HomeIcon className={classes.icon} />
-        Acceuil
-      </Link>
-                <Link
-                    color="inherit"
-                    href="/getting-started/installation/"
-                    onClick={handleClick}
-                    className={classes.link}
-                >
-                    <WhatshotIcon className={classes.icon} />
-        Les projets
-      </Link>
-                <Typography color="textPrimary" className={classes.link}>
-                    <GrainIcon className={classes.icon} />
-        etc.
-      </Typography>
-            </Breadcrumbs>
-        </Container>
-    );
-}
+const Arianne = () => (
+    <Breadcrumb icon='right angle' sections={sections} className="arianne" />
+)
 
 export default Arianne;
