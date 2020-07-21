@@ -1,11 +1,13 @@
 // == Import : npm
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Button, Menu } from 'semantic-ui-react'
+
 
 // == Import : local
 import './navbar.scss';
-
+import BreadCumbs from 'src/components/BreadCrumbs';
+import { Breadcrumbs } from '@material-ui/core';
+import IconBreadcrumbs from '../BreadCrumbs';
 // == Composant
 const Navbar = () => {
 
@@ -43,7 +45,7 @@ const Navbar = () => {
                     {token.length > 3 && <DisconnectModal className="button-link-connect" />}
                 </li> */}
             </ul>
-
+            <IconBreadcrumbs />
         </div>
     );
 };
