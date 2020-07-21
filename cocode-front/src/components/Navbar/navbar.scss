@@ -1,12 +1,13 @@
 @import 'src/styles/_vars.scss';
 
 .navbar {
-  margin-top:1rem;
+  margin: 1rem 0 2rem 0;
   z-index:2000;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   color:black;
+
 
   &-logo-image {
     width: 40%;

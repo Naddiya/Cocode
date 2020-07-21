@@ -28,7 +28,7 @@ const Navbar = () => {
             </Menu> */}
 
             <div className="ui secondary menu">
-                <a className="active item">Acceuil</a>
+                <a className="active orange item">Acceuil</a>
                 <a className="item"> Tous les projets </a>
                 <a className="item">Friends</a>
                 <div className="right menu">

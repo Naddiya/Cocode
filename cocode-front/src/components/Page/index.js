@@ -7,7 +7,7 @@ import { Route, Redirect, Switch, Router } from "react-router-dom";
 // == Import : local
 import Home from 'src/components/Home';
 import NotFound from 'src/components/NotFound';
-import Arianne from 'src/components/Arianne';
+import Ariane from 'src/components/Arianne';
 
 
 // == Composant
@@ -16,7 +16,7 @@ class Page extends Component {
     render() {
         return (
             <div>
-                <Arianne />
+                <Ariane />
 
                 <Switch>
                     <Route path="/" exact component={Home} />
